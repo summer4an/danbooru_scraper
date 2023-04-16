@@ -11,6 +11,6 @@ use like below.
         --need_file_ext 'jpg,jpeg,png,webp' \
         --need_data_num 100 &
 
-see log file "output_log_*.txt" and result "output_dir_*".
+see log file "output_log_\*.txt" and result "output_dir_\*".
 
 search query usage https://danbooru.donmai.us/wiki_pages/help:cheatsheet
