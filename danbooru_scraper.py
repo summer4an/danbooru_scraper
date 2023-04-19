@@ -44,6 +44,7 @@ class MyPrint:
             if self.logfile is not None: self.logfile.write(message)
         except:
             self.logfile = None
+        self.flush()
     def flush(self):
         try:
             if self.console is not None: self.console.flush()
