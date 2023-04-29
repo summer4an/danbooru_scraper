@@ -132,7 +132,10 @@ def DanbooruScrape():
                 json.dump(target_data,fp,indent=4)
 
             with open(output_path_txt, 'w') as fp:
-                text = target_data['tag_string_character'] + ' ' + target_data['tag_string_general']
+                #search_keyword = [target for target in args.search_query.split(' ') if ':' not in target]
+                #text = ' '.join(search_keyword)+' '
+                #text += target_data['tag_string_character'] + ' ' + target_data['tag_string_general']
+                text = target_data['tag_string']
                 text = text.replace(' ', ', ')
                 print(text, file=fp)
 
